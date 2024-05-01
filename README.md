@@ -16,15 +16,17 @@ Welcome to the Coffee Shop website! This is a web application for order coffee a
 
 To get started with the Coffee Shop website, follow these steps:
 
-1. Clone the repository to your local machine:
-   ```bash
+1. **Clone the Repository:**
+   ```sh
    git clone https://github.com/zulhusni2003/Coffee-Shop.git
 
-3. Open the project directory in your preferred code editor.
+2. **Open the Project Directory:**
+   ```sh
+   cd Coffee-Shop
 
-4. Explore the project files and make any desired modifications or enhancements.
-
-5. Open the `index.html` file in your web browser to view the website locally.
+3. **View the Project:**
+   - Open the index.html file in your preferred web browser to view the website locally.
+   - Once the website is open in your browser, you can explore its features, navigate through different pages, and interact with its functionality.
 
 ## Contributing
 
