@@ -1,6 +1,6 @@
 # Coffee Shop Website
 
-Welcome to the Coffee Shop website! This project is a web application for orders and enhancing communication between customers and sellers.
+Welcome to the Coffee Shop website! This is a web application for order coffee and enhancing communication between customers and sellers.
 
 ## Features
 - Send order details to sellers via WhatsApp
@@ -10,23 +10,25 @@ Welcome to the Coffee Shop website! This project is a web application for orders
 - CSS
 - JavaScript
 - Alpine.js
+- Feather (for icons)
 
 ## Getting Started
 
 To get started with the Coffee Shop website, follow these steps:
 
 1. Clone the repository to your local machine:
-   `git clone https://github.com/zulhusni2003/Coffee-Shop.git`
+   ```bash
+   git clone https://github.com/zulhusni2003/Coffee-Shop.git
 
-2. Open the project directory in your preferred code editor.
+3. Open the project directory in your preferred code editor.
 
-3. Explore the project files and make any desired modifications or enhancements.
+4. Explore the project files and make any desired modifications or enhancements.
 
-4. Open the `index.html` file in your web browser to view the website locally.
+5. Open the `index.html` file in your web browser to view the website locally.
 
 ## Contributing
 
-We welcome contributions from the community! 
+Contributions are welcome! Feel free to open an issue or submit a pull request to suggest improvements or new features.
 
 ## Contact
 
