@@ -24,8 +24,13 @@ To get started with the Coffee Shop website, follow these steps:
    ```sh
    cd Coffee-Shop
 
-3. **View the Project:**
-   - Open the index.html file in your preferred web browser to view the website locally.
+3. **Open the Project Directory in Code Editor:**
+   ```sh
+   code .
+
+4. **View the Project:**
+   - Open the index.html file.
+   - Right click and select "Open with live server".
    - Once the website is open in your browser, you can explore its features, navigate through different pages, and interact with its functionality.
 
 ## Contributing
