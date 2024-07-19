@@ -21,7 +21,7 @@ The Coffee Shop project is a web application designed to streamline customer ord
 
 1. Clone the repository to your local machine.
 ```bash
-git clone https://github.com/zulhusni2003/Coffee-Shop.git
+git clone https://github.com/MuhammadZulhusni/Coffee-Shop.git
 ```
 2. Open the project directory.
 ```bash
