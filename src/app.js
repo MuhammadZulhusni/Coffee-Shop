@@ -109,10 +109,12 @@ const formatMessage = (obj) => {
 };
 
 // Convert to MYR
+// Function to format a number as Malaysian Ringgit (MYR)
 const myr = (number) => {
   return new Intl.NumberFormat("id-ID", {
-    style: "currency",
-    currency: "MYR",
-    minimumFractionDigits: 0,
-  }).format(number);
+    // Use Indonesian locale formatting
+    style: "currency", // Format as currency
+    currency: "MYR", // Set currency to Malaysian Ringgit (MYR)
+    minimumFractionDigits: 0, // No decimal places
+  }).format(number); // Format and return the number
 };
