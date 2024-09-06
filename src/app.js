@@ -95,17 +95,21 @@ checkoutButton.addEventListener("click", function (e) {
   window.open("http://wa.me/60182400849?text=" + encodeURIComponent(message));
 });
 
-// Format order whatsapp
+// Format order message for WhatsApp
 const formatMessage = (obj) => {
+  // Customer name, Customer email, Customer phone number
   return `Data Customer
-  Name:  ${obj.name}
-  Email: ${obj.email} 
-  No HP: ${obj.phone}
+  Name:  ${obj.name}                    
+  Email: ${obj.email}                  
+  No HP: ${obj.phone}                   
   
   Data Pesanan
-  ${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${myr(item.total)}) \n `)}
-  TOTAL: ${myr(obj.total)}
-  Terima Kasih.`;
+  ${
+    JSON.parse(obj.items) // Parse items from JSON string to array
+      .map((item) => `${item.name} (${item.quantity} x ${myr(item.total)}) \n `) // Format each item's name, quantity, and total price
+  }
+  TOTAL: ${myr(obj.total)}              // Format total price in MYR
+  Terima Kasih.`; // Thank you message at the end
 };
 
 // Convert to MYR
