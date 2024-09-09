@@ -87,11 +87,13 @@ form.addEventListener("keyup", function () {
 
 // Send data bila button checkout diklik
 checkoutButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const data = new URLSearchParams(formData);
-  const objData = Object.fromEntries(data);
-  const message = formatMessage(objData);
+  e.preventDefault(); // Prevent the default form submission action
+  const formData = new FormData(form); // Create a FormData object from the form
+  const data = new URLSearchParams(formData); // Convert FormData to URLSearchParams for easier manipulation
+  const objData = Object.fromEntries(data); // Convert URLSearchParams to a plain object
+  const message = formatMessage(objData); // Generate the formatted message using the data
+
+  // Open WhatsApp with the formatted message
   window.open("http://wa.me/60182400849?text=" + encodeURIComponent(message));
 });
 
