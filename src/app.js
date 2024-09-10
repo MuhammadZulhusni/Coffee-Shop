@@ -67,22 +67,29 @@ document.addEventListener("alpine:init", () => {
 });
 
 // Form validation
+// Select the checkout button and disable it initially
 const checkoutButton = document.querySelector(".checkout-button");
-checkoutButton.disabled = true;
+checkoutButton.disabled = true; // Button is disabled initially
 
+// Select the form by its ID
 const form = document.querySelector("#checkoutForm");
 
+// Add an event listener for the 'keyup' event on the form
 form.addEventListener("keyup", function () {
-  for (let i = 0; i < form.elements.lengths; i++) {
+  // Loop through each form element
+  for (let i = 0; i < form.elements.length; i++) {
+    // If any form element has a non-empty value
     if (form.elements[i].value.length !== 0) {
-      checkoutButton.classList.remove("disabled");
-      checkoutButton.classList.add("disabled");
+      checkoutButton.classList.remove("disabled"); // Remove "disabled" class
+      checkoutButton.classList.add("enabled"); // Add "enabled" class
     } else {
-      return false;
+      return false; // Stop if any field is empty
     }
   }
-  checkoutButton.disabled = false;
-  checkoutButton.classList.remove("disabled");
+
+  // Enable the checkout button when all fields are filled
+  checkoutButton.disabled = false; // Enable the button
+  checkoutButton.classList.remove("disabled"); // Remove "disabled" class
 });
 
 // Send data bila button checkout diklik
