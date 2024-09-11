@@ -58,9 +58,11 @@ document.querySelector(".modal .close-icon").onclick = (e) => {
   e.preventDefault();
 };
 
-// klik di luar modal
+// Close the modal when clicking outside of it
 window.onclick = (e) => {
+  // Check if the click target is the modal itself
   if (e.target === itemDetailModal) {
+    // If true, hide the modal by setting its display to "none"
     itemDetailModal.style.display = "none";
   }
 };
