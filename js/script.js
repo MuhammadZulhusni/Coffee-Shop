@@ -53,9 +53,10 @@ itemDetailButtons.forEach((btn) => {
 });
 
 // klik tombol close modal
+// Close the modal when the close icon is clicked
 document.querySelector(".modal .close-icon").onclick = (e) => {
-  itemDetailModal.style.display = "none";
-  e.preventDefault();
+  itemDetailModal.style.display = "none"; // Hide the modal by setting its display to "none"
+  e.preventDefault(); // Prevent the default behavior of the anchor tag
 };
 
 // Close the modal when clicking outside of it
