@@ -42,13 +42,17 @@ document.addEventListener("click", function (e) {
 });
 
 // Modal Box
+// Select the modal element
 const itemDetailModal = document.querySelector("#item-detail-modal");
+
+// Select all buttons that trigger the item detail modal
 const itemDetailButtons = document.querySelectorAll(".item-detail-button");
 
+// Add click event listener to each item detail button
 itemDetailButtons.forEach((btn) => {
   btn.onclick = (e) => {
-    itemDetailModal.style.display = "flex";
-    e.preventDefault();
+    itemDetailModal.style.display = "flex"; // Display the modal as a flexbox
+    e.preventDefault(); // Prevent the default behavior (e.g., following a link)
   };
 });
 
