@@ -23,21 +23,26 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
 };
 
 // Klik di luar elemen
+// Select the hamburger menu, search button, and shopping cart button
 const hm = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
 const sc = document.querySelector("#shopping-cart-button");
 
+// Add an event listener to the document to handle clicks anywhere on the page
 document.addEventListener("click", function (e) {
+  // If the click is outside the hamburger menu and the navbar, close the navbar
   if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
+    navbarNav.classList.remove("active"); // Remove 'active' class to hide the navbar
   }
 
+  // If the click is outside the search button and the search form, close the search form
   if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
-    searchForm.classList.remove("active");
+    searchForm.classList.remove("active"); // Remove 'active' class to hide the search form
   }
 
+  // If the click is outside the shopping cart button and the shopping cart, close the cart
   if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
-    shoppingCart.classList.remove("active");
+    shoppingCart.classList.remove("active"); // Remove 'active' class to hide the shopping cart
   }
 });
 
