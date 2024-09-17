@@ -16,10 +16,13 @@ document.querySelector("#search-button").onclick = (e) => {
 };
 
 // Toggle class active untuk shopping cart
+// Select the shopping cart element
 const shoppingCart = document.querySelector(".shopping-cart");
+
+// Add click event listener to the shopping cart button
 document.querySelector("#shopping-cart-button").onclick = (e) => {
-  shoppingCart.classList.toggle("active");
-  e.preventDefault();
+  shoppingCart.classList.toggle("active"); // Toggle the 'active' class to show/hide the shopping cart
+  e.preventDefault(); // Prevent the default behavior (e.g., page navigation)
 };
 
 // Klik di luar elemen
