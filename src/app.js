@@ -1,11 +1,14 @@
+// Listen for the 'alpine:init' event to initialize Alpine.js components
 document.addEventListener("alpine:init", () => {
+  // Define an Alpine.js data component named 'products'
   Alpine.data("products", () => ({
+    // Array of product items with id, name, image, and price properties
     items: [
-      { id: 1, name: "Robusta", img: "1.jpg", price: 20 },
-      { id: 2, name: "Arabica", img: "2.jpeg", price: 25 },
-      { id: 3, name: "Primo", img: "3.jpeg", price: 30 },
-      { id: 4, name: "Aceh gayo", img: "4.jpeg", price: 50 },
-      { id: 5, name: "Sumatra", img: "5.jpeg", price: 55 },
+      { id: 1, name: "Robusta", img: "1.jpg", price: 20 }, // Product 1
+      { id: 2, name: "Arabica", img: "2.jpeg", price: 25 }, // Product 2
+      { id: 3, name: "Primo", img: "3.jpeg", price: 30 }, // Product 3
+      { id: 4, name: "Aceh gayo", img: "4.jpeg", price: 50 }, // Product 4
+      { id: 5, name: "Sumatra", img: "5.jpeg", price: 55 }, // Product 5
     ],
   }));
 
